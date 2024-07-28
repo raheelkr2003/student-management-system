@@ -21,13 +21,13 @@ function CreatStudent({getStudents}) {
       setRollNo("")
       setName("")
       setAge("")
-      setIsCreatingStudent(false)
       await getStudents();
+
     } catch (error) {
       console.log("error creating user", error)
-      setIsCreatingStudent(false)
 
     }
+    setIsCreatingStudent(false)
   }
 
   return (
